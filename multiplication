@@ -1,0 +1,26 @@
+#include <iostream>
+
+using namespace std;
+
+int numberproduct(int number_1, int number_2) {
+	int total = number_1 * number_2;
+	return total;
+}
+
+int main() {
+
+	int number_a;
+	cout << "Type in a number " << endl;
+	cin >> number_a;
+	//cout << number_a << endl;
+
+	int number_b;
+	cout << "Type in another number " << endl;
+	cin >> number_b;
+	//clog << number_b << endl;
+
+	int product = numberproduct(number_a, number_b);
+	cout << "the product of your numbers is: " << product;
+
+	return 0;
+}

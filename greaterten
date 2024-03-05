@@ -1,0 +1,33 @@
+#include <iostream>
+
+using namespace std;
+
+bool greaterten(double thenumber) {
+	if (thenumber > 10) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
+int main() {
+	cout << "enter a number: " << endl;
+	
+	double input1; // input1 is just meant to be what the person inputs
+	cin >> input1;
+	//clog << input1;
+
+	bool big10 = greaterten(input1);
+	cout << boolalpha;
+	//clog << big10 << endl;
+
+	if (big10 == true) {
+		cout << "your number is greater than 10!";
+	}
+	else {
+		cout << "your number is NOT greater than 10";
+	}
+
+	return 0;
+}
